@@ -1,0 +1,10 @@
+# test/fixtures/invoices.yml
+
+first:
+  name: First Invoice
+
+second:
+  name: Second Invoice
+
+third:
+  name: Third Invoice
