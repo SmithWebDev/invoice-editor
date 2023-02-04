@@ -1,0 +1,10 @@
+<%= simple_form_for invoice, html: {class: 'invoice form'} do |f| %>
+  <% if invoice.errors.any? %>
+    <div class="error-message">
+      <%= invoice.errors.full_messages.to_sentence.captialize %>
+    </div>
+  <% end %>
+
+  <%= f.input :name, input_html: {autofocus: true} %>
+  <%= f.submit class: 'btn btn--secondary' %>
+<% end %>
