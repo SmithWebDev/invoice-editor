@@ -1,0 +1,10 @@
+<main class="container">
+  <div class="header">
+    <h1>Invoices</h1>
+    <%= link_to
+      'New Invoice',
+        new_invoice_path,
+        class: 'btn btn--primary' %>
+    <%= render @invoices %>
+  </div>
+</main>

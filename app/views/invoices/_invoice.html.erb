@@ -1,0 +1,8 @@
+<div class="invoice">
+  <%= link_to invoice.name, invoice_path(invoice) %>
+  <div class="invoice__actions">
+    <%= button_to "Delete", invoice_path, method: :delete, class: 'btn btn--light'%>
+    <%= link_to "Edit", edit_invoice_path(invoice), class: 'btn btn--light' %>
+  </div>
+</div>
+
