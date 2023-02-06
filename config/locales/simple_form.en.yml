@@ -1,4 +1,4 @@
-en:
+n:
   simple_form:
     placeholders:
       invoice:
@@ -6,9 +6,8 @@ en:
     labels:
       invoice:
         name: Name
-
-    helpers:
-      submit:
-        invoice:
-          create: Create invoice
-          update: Update invoice
+  helpers:
+    submit:
+      invoice:
+        create: Create invoice
+        update: Update invoice
