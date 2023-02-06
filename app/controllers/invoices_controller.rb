@@ -42,5 +42,7 @@ class InvoicesController < ApplicationController
     @invoice = Invoice.find(params[:id])
   end
 
-  def invoice_params; end
+  def invoice_params
+    params.require(:invoice).permit(:name)
+  end
 end
