@@ -14,12 +14,12 @@ class InvoicesTest < ApplicationSystemTestCase
     # When we click on the link with the text "New invoice"
     # we expect to land on a page with the title "New invoice"
     click_on 'New Invoice'
-    assert_selector 'h1', text: 'New invoice'
+    assert_selector 'h1', text: 'New Invoice'
 
     # When we fill in the name input with "Capybara invoice"
     # and we click on "Create Invoice"
     fill_in 'Name', with: 'Capybara invoice'
-    click_on 'Create invoice'
+    click_on 'Create Invoice'
 
     # We expect to be back on the page with the title "Invoices"
     # and to see our "Capybara invoice" added to the list
@@ -39,9 +39,9 @@ class InvoicesTest < ApplicationSystemTestCase
     assert_selector 'h1', text: 'Invoice'
 
     click_on 'Edit', match: :first
-    assert_selector 'h1', text: 'Edit invoice'
+    assert_selector 'h1', text: 'Edit Invoice'
 
-    fill_in 'Name', with: 'Updated invoice'
+    fill_in 'Name', with: 'Updated Invoice'
     click_on 'Update Invoice'
 
     assert_selector 'h1', text: 'Invoice'
