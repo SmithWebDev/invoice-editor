@@ -17,7 +17,7 @@ class InvoicesController < ApplicationController
     if @invoice.save
       redirect_to invoices_path, notice: 'Invoice was successfully created.'
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -27,7 +27,7 @@ class InvoicesController < ApplicationController
     if @invoice.update(invoice_params)
       redirect_to invoices_path, notice: 'Invoice was successfully updated.'
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
